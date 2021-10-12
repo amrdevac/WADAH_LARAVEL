@@ -6,10 +6,10 @@ require('./kostum/adminTemplate/misc');
 require('./mask');
 // require('./kostum/kostum');
 
-import VModal from 'vue-js-modal'
+// import VModal from 'vue-js-modal'
 import router from './kostum/router/router'
 import akses from  './kostum/akses'
-import 'animate.css';
+// import 'animate.css';
 
 import Vue from 'vue'
 
@@ -23,7 +23,7 @@ window.btn_kelola = (bol)=>{
 }
 
 Vue.prototype.$akses = new akses(window.user);
-Vue.use(VModal, { dynamicDefault: { draggable: true, resizable: true } })
+// Vue.use(VModal, { dynamicDefault: { draggable: true, resizable: true } })
 
 
 // Create Title Page 
@@ -64,13 +64,13 @@ import VueCarousel from 'vue-carousel';
 // =====
 
 // Masking Component
-import VueMask from 'v-mask'
-Vue.use(VueMask);
+// import VueMask from 'v-mask'
+// Vue.use(VueMask);
 // ===
 
 
 // Label Uang Filter
-const idr = new Intl.NumberFormat('en-US', {
+const idr = new Intl.NumberFormat('id-ID', {
 	style: 'currency',
 	currency: 'IDR',
 	minimumFractionDigits: 0
